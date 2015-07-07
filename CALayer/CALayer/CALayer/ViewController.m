@@ -11,6 +11,7 @@
 
 #import "CALayerViewController.h"
 #import "CALayerLodgeViewController.h"
+#import "CALayerGeometryViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *CALayerTable;
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataSource = @[@"CALayer图层树",@"寄宿图"];
+    self.dataSource = @[@"CALayer图层树",@"寄宿图",@"图层几何学"];
     self.CALayerTable.dataSource = self;
     self.CALayerTable.delegate = self;
 }
@@ -53,6 +54,11 @@
     if ([pushType isEqualToString:@"寄宿图"]) {
         CALayerLodgeViewController *lodge = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerLodgeViewController"];
         [self.navigationController pushViewController:lodge animated:YES];
+    }
+    
+    if ([pushType isEqualToString:@"图层几何学"]) {
+        CALayerGeometryViewController *geometry = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerGeometry"];
+        [self.navigationController pushViewController:geometry animated:YES];
     }
 }
 

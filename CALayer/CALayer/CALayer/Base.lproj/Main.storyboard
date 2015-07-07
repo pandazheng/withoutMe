@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WVC-3Q-rfR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WVC-3Q-rfR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -130,6 +130,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bk-k0-Miy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="995" y="330"/>
+        </scene>
+        <!--Layer Geometry View Controller-->
+        <scene sceneID="Gu1-qu-2gW">
+            <objects>
+                <viewController storyboardIdentifier="CALayerGeometry" id="Fhw-0z-6hK" customClass="CALayerGeometryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pTO-g6-ibb"/>
+                        <viewControllerLayoutGuide type="bottom" id="SKT-tp-6Zy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="km9-jO-No5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvY-TX-vAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="330"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T5f-T7-FUK">

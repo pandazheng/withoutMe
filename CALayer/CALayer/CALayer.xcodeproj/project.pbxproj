@@ -19,6 +19,8 @@
 		170EB3AD1B33B28A007F1AF6 /* mockingbird.png in Resources */ = {isa = PBXBuildFile; fileRef = 170EB3AC1B33B28A007F1AF6 /* mockingbird.png */; };
 		170EB3AF1B33B354007F1AF6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170EB3AE1B33B354007F1AF6 /* QuartzCore.framework */; };
 		170EB3B21B33B98F007F1AF6 /* CALayerLodgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170EB3B11B33B98F007F1AF6 /* CALayerLodgeViewController.m */; };
+		171C07431B4AC43B008D27D4 /* CALayerGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171C07421B4AC43B008D27D4 /* CALayerGeometryViewController.m */; };
+		17E4E6E41B48FA8A00707BFE /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4E6E21B48FA3800707BFE /* CALayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		170EB3AE1B33B354007F1AF6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		170EB3B01B33B98F007F1AF6 /* CALayerLodgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerLodgeViewController.h; sourceTree = "<group>"; };
 		170EB3B11B33B98F007F1AF6 /* CALayerLodgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerLodgeViewController.m; sourceTree = "<group>"; };
+		171C07411B4AC43B008D27D4 /* CALayerGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerGeometryViewController.h; sourceTree = "<group>"; };
+		171C07421B4AC43B008D27D4 /* CALayerGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerGeometryViewController.m; sourceTree = "<group>"; };
+		17E4E6E11B48FA3800707BFE /* CALayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		17E4E6E21B48FA3800707BFE /* CALayer.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = CALayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 				170EB3891B33AA65007F1AF6 /* Images.xcassets */,
 				170EB38B1B33AA65007F1AF6 /* LaunchScreen.xib */,
 				170EB37C1B33AA65007F1AF6 /* Supporting Files */,
+				17E4E6E21B48FA3800707BFE /* CALayer.swift */,
+				17E4E6E11B48FA3800707BFE /* CALayer-Bridging-Header.h */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -153,6 +161,8 @@
 				170EB3A81B33B0D6007F1AF6 /* CALayerViewController.m */,
 				170EB3B01B33B98F007F1AF6 /* CALayerLodgeViewController.h */,
 				170EB3B11B33B98F007F1AF6 /* CALayerLodgeViewController.m */,
+				171C07411B4AC43B008D27D4 /* CALayerGeometryViewController.h */,
+				171C07421B4AC43B008D27D4 /* CALayerGeometryViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -262,7 +272,9 @@
 				170EB3851B33AA65007F1AF6 /* ViewController.m in Sources */,
 				170EB3A51B33AB83007F1AF6 /* pushCALayer.m in Sources */,
 				170EB3821B33AA65007F1AF6 /* AppDelegate.m in Sources */,
+				17E4E6E41B48FA8A00707BFE /* CALayer.swift in Sources */,
 				170EB3A91B33B0D6007F1AF6 /* CALayerViewController.m in Sources */,
+				171C07431B4AC43B008D27D4 /* CALayerGeometryViewController.m in Sources */,
 				170EB37F1B33AA65007F1AF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,9 +401,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CALayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CALayer/CALayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -399,9 +414,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CALayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CALayer/CALayer-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -458,6 +475,7 @@
 				170EB39E1B33AA65007F1AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		170EB39F1B33AA65007F1AF6 /* Build configuration list for PBXNativeTarget "CALayerTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +484,7 @@
 				170EB3A11B33AA65007F1AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

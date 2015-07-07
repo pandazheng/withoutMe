@@ -73,6 +73,11 @@
     self.secondLayerView.contentsRect = CGRectMake(0.5, 0, 0.5, 0.5);
 }
 
+-(void)usedContentsCenter
+{
+    self.lodgeLayerView.contentsCenter = CGRectMake(0.25,0.25,0.5, 0.5);
+}
+
 
 -(void)didReceiveMemoryWarning{
     
