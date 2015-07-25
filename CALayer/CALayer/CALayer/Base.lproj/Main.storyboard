@@ -30,7 +30,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZw-rD-lO0">
                                                     <rect key="frame" x="5" y="0.0" width="590" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -97,6 +97,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6b-jd-vC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="338" y="331"/>
+        </scene>
+        <!--Layer Transform Controller-->
+        <scene sceneID="ehL-sD-vrl">
+            <objects>
+                <viewController storyboardIdentifier="CALayerTransform" id="Miu-UX-wmz" customClass="CALayerTransformController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tz5-pg-pDW"/>
+                        <viewControllerLayoutGuide type="bottom" id="N1j-wJ-M9I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L9E-Zg-TXo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFF-I1-xAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="-233"/>
+        </scene>
+        <!--Layer Design Controller-->
+        <scene sceneID="s6P-HM-2dd">
+            <objects>
+                <viewController storyboardIdentifier="CALayerDesign" id="IY1-iu-b9J" customClass="CALayerDesignController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eff-zh-L2N"/>
+                        <viewControllerLayoutGuide type="bottom" id="ol1-fy-fYw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bCR-Ri-Py9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6h-JE-jFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328" y="-339"/>
         </scene>
         <!--Layer Lodge View Controller-->
         <scene sceneID="UnE-BP-FJm">

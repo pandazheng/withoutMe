@@ -12,6 +12,8 @@
 #import "CALayerViewController.h"
 #import "CALayerLodgeViewController.h"
 #import "CALayerGeometryViewController.h"
+#import "CALayerDesignController.h"
+#import "CALayerTransformController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *CALayerTable;
@@ -23,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataSource = @[@"CALayer图层树",@"寄宿图",@"图层几何学"];
+    self.dataSource = @[@"CALayer图层树",@"寄宿图",@"图层几何学",@"视觉效果",@"变换"];
     self.CALayerTable.dataSource = self;
     self.CALayerTable.delegate = self;
 }
@@ -59,6 +61,16 @@
     if ([pushType isEqualToString:@"图层几何学"]) {
         CALayerGeometryViewController *geometry = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerGeometry"];
         [self.navigationController pushViewController:geometry animated:YES];
+    }
+    
+    if ([pushType isEqualToString:@"变换"]) {
+        CALayerTransformController *transform = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerTransform"];
+        [self.navigationController pushViewController:transform animated:YES];
+    }
+    
+    if ([pushType isEqualToString:@"视觉效果"]) {
+        CALayerDesignController *design = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerDesign"];
+        [self.navigationController pushViewController:design animated:YES];
     }
 }
 

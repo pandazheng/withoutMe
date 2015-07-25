@@ -21,6 +21,8 @@
 		170EB3B21B33B98F007F1AF6 /* CALayerLodgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170EB3B11B33B98F007F1AF6 /* CALayerLodgeViewController.m */; };
 		171C07431B4AC43B008D27D4 /* CALayerGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171C07421B4AC43B008D27D4 /* CALayerGeometryViewController.m */; };
 		17E4E6E41B48FA8A00707BFE /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4E6E21B48FA3800707BFE /* CALayer.swift */; };
+		17F3764C1B6365DE00FAB4A5 /* CALayerTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F3764B1B6365DE00FAB4A5 /* CALayerTransformController.m */; };
+		17F3764F1B63670800FAB4A5 /* CALayerDesignController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F3764E1B63670800FAB4A5 /* CALayerDesignController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		171C07421B4AC43B008D27D4 /* CALayerGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerGeometryViewController.m; sourceTree = "<group>"; };
 		17E4E6E11B48FA3800707BFE /* CALayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		17E4E6E21B48FA3800707BFE /* CALayer.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = CALayer.swift; sourceTree = "<group>"; };
+		17F3764A1B6365DE00FAB4A5 /* CALayerTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerTransformController.h; sourceTree = "<group>"; };
+		17F3764B1B6365DE00FAB4A5 /* CALayerTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerTransformController.m; sourceTree = "<group>"; };
+		17F3764D1B63670800FAB4A5 /* CALayerDesignController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerDesignController.h; sourceTree = "<group>"; };
+		17F3764E1B63670800FAB4A5 /* CALayerDesignController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerDesignController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,12 +163,16 @@
 		170EB3A61B33B096007F1AF6 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				17F3764A1B6365DE00FAB4A5 /* CALayerTransformController.h */,
+				17F3764B1B6365DE00FAB4A5 /* CALayerTransformController.m */,
 				170EB3A71B33B0D6007F1AF6 /* CALayerViewController.h */,
 				170EB3A81B33B0D6007F1AF6 /* CALayerViewController.m */,
 				170EB3B01B33B98F007F1AF6 /* CALayerLodgeViewController.h */,
 				170EB3B11B33B98F007F1AF6 /* CALayerLodgeViewController.m */,
 				171C07411B4AC43B008D27D4 /* CALayerGeometryViewController.h */,
 				171C07421B4AC43B008D27D4 /* CALayerGeometryViewController.m */,
+				17F3764D1B63670800FAB4A5 /* CALayerDesignController.h */,
+				17F3764E1B63670800FAB4A5 /* CALayerDesignController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -270,10 +280,12 @@
 			files = (
 				170EB3B21B33B98F007F1AF6 /* CALayerLodgeViewController.m in Sources */,
 				170EB3851B33AA65007F1AF6 /* ViewController.m in Sources */,
+				17F3764C1B6365DE00FAB4A5 /* CALayerTransformController.m in Sources */,
 				170EB3A51B33AB83007F1AF6 /* pushCALayer.m in Sources */,
 				170EB3821B33AA65007F1AF6 /* AppDelegate.m in Sources */,
 				17E4E6E41B48FA8A00707BFE /* CALayer.swift in Sources */,
 				170EB3A91B33B0D6007F1AF6 /* CALayerViewController.m in Sources */,
+				17F3764F1B63670800FAB4A5 /* CALayerDesignController.m in Sources */,
 				171C07431B4AC43B008D27D4 /* CALayerGeometryViewController.m in Sources */,
 				170EB37F1B33AA65007F1AF6 /* main.m in Sources */,
 			);
