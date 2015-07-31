@@ -39,6 +39,10 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
     calayer.shadowColor = [UIColor colorWithWhite:0.498 alpha:1.000].CGColor;
     calayer.shadowOpacity = 0.6;
     calayer.shadowOffset = CGSizeMake(0, 3);
+    calayer.shadowRadius = 100;
+    calayer.contents = (__bridge id)[UIImage imageNamed:@"mockingbird.png"].CGImage;
+//    calayer.shadowPath
+//    calayer.shadowRadius
     calayer.opacity = 0.6;
     
     // pi 做为弧度单位，一个pi为180 M_PI_4也就是四分之一，45度

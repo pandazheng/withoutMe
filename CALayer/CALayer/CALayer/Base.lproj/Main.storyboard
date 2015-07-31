@@ -114,7 +114,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFF-I1-xAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="-233"/>
+            <point key="canvasLocation" x="338" y="-353"/>
+        </scene>
+        <!--Layer Dedicated View Controller-->
+        <scene sceneID="MSC-96-7vz">
+            <objects>
+                <viewController storyboardIdentifier="CALayerDedicatedView" id="p8o-O9-bfs" customClass="CALayerDedicatedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rO0-3j-h7f"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhK-lU-C0V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H9r-LV-0Qj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0Y-GL-n9l">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="z0Y-GL-n9l" id="9FN-hV-iPi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhQ-Ag-ah7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-1043"/>
         </scene>
         <!--Layer Design Controller-->
         <scene sceneID="s6P-HM-2dd">
@@ -132,7 +159,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6h-JE-jFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="-339"/>
+            <point key="canvasLocation" x="995" y="-353"/>
+        </scene>
+        <!--Layer Transform3D Controller-->
+        <scene sceneID="2wR-P1-naG">
+            <objects>
+                <viewController storyboardIdentifier="CALayerTransform3D" id="rC7-1Q-PWJ" customClass="CALayerTransform3DController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Qz-eq-6in"/>
+                        <viewControllerLayoutGuide type="bottom" id="jLf-fc-y7o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X2J-Xf-6jb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5p-BK-3bP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-343"/>
         </scene>
         <!--Layer Lodge View Controller-->
         <scene sceneID="UnE-BP-FJm">
