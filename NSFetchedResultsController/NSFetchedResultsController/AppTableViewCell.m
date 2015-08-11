@@ -7,6 +7,7 @@
 //
 
 #import "AppTableViewCell.h"
+#import "Event.h"
 
 @implementation AppTableViewCell
 
@@ -18,6 +19,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setDataSource:(Event *)dataSource
+{
+    _dataSource = dataSource;
+    self.textLabel.text = _dataSource.sectionMinute;
 }
 
 @end

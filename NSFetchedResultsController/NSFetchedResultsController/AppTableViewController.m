@@ -8,8 +8,8 @@
 
 #import <CoreData/CoreData.h>
 #import "AppTableViewController.h"
+#import "AppTableViewCell.h"
 #import "ModelManager.h"
-#import "Event.h"
 
 static NSString *identifier = @"fetchResult";
 
@@ -35,8 +35,6 @@ static NSString *identifier = @"fetchResult";
     self.manager.fetchResult.delegate = self;
     NSError *error = nil;
     [self.manager.fetchResult performFetch:&error];
-//    NSLog(@"%@",self.manager.fetchResult.sectionNameKeyPath);
-    NSLog(@"%@",self.manager.fetchResult.fetchedObjects);
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
@@ -68,11 +66,9 @@ static NSString *identifier = @"fetchResult";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    Event *eventTag = [self.manager.fetchResult objectAtIndexPath:indexPath];
-    NSLog(@"event --- %@",eventTag.sectionMinute);
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    cell.textLabel.text = eventTag.sectionMinute;
+    // Return the cell
+    AppTableViewCell *cell = (AppTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    cell.dataSource = [self.manager.fetchResult objectAtIndexPath:indexPath];
     return cell;
 }
 

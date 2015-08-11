@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Event;
+
 @interface AppTableViewCell : UITableViewCell
+
+@property(strong,nonatomic) Event *dataSource;
 
 @end
