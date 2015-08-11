@@ -143,6 +143,24 @@
             </objects>
             <point key="canvasLocation" x="338" y="-1043"/>
         </scene>
+        <!--Layer Hidde Animation View Controller-->
+        <scene sceneID="s50-Al-hq6">
+            <objects>
+                <viewController storyboardIdentifier="CALayerHiddeAnimation" id="EJx-Lh-hnT" customClass="CALayerHiddeAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zdP-Fr-2kj"/>
+                        <viewControllerLayoutGuide type="bottom" id="0zi-Ne-wWg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="shp-ST-iA1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6x-hE-YGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="-1043"/>
+        </scene>
         <!--Layer Design Controller-->
         <scene sceneID="s6P-HM-2dd">
             <objects>

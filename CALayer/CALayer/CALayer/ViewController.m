@@ -16,6 +16,7 @@
 #import "CALayerTransformController.h"
 #import "CALayerTransform3DController.h"
 #import "CALayerDedicatedViewController.h"
+#import "CALayerHiddeAnimationViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *CALayerTable;
@@ -27,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataSource = @[@"CALayer图层树",@"寄宿图",@"图层几何学",@"视觉效果",@"变换",@"3D变换",@"专用图层"];
+    self.dataSource = @[@"CALayer图层树",@"寄宿图",@"图层几何学",@"视觉效果",@"变换",@"3D变换",@"专用图层",@"显示动画"];
     self.CALayerTable.dataSource = self;
     self.CALayerTable.delegate = self;
 }
@@ -83,6 +84,11 @@
     if ([pushType isEqualToString:@"专用图层"]) {
         CALayerDedicatedViewController *deicate = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerDedicatedView"];
         [self.navigationController pushViewController:deicate animated:YES];
+    }
+    
+    if ([pushType isEqualToString:@"显示动画"]) {
+        CALayerHiddeAnimationViewController *hidde = [self.storyboard instantiateViewControllerWithIdentifier:@"CALayerHiddeAnimation"];
+        [self.navigationController pushViewController:hidde animated:YES];
     }
 }
 
