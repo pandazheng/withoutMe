@@ -10,12 +10,13 @@
 
 #import "ViewController.h"
 #import "MVVMTableView.h"
-#import "MVVMTableViewDataSource.h"
+#import "MVVMTableViewExtend.h"
+#import "MVVMTableViewCell.h"
 
 @interface ViewController ()
 
 @property (strong,nonatomic) MVVMTableView           *tableView;
-@property (strong,nonatomic) MVVMTableViewDataSource *tableViewDelegate;
+@property (strong,nonatomic) MVVMTableViewExtend     *tableViewExtend;
 
 @end
 
@@ -32,7 +33,7 @@
 {
     self.tableView = [[MVVMTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
-
+    [self.tableView registerTableViewCellForIdentifier:@[[MVVMTableViewCell class]]];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
@@ -40,8 +41,13 @@
 
 - (void)initWithDataSource
 {
-    self.tableViewDelegate = [[MVVMTableViewDataSource alloc] init];
-    [self.tableView regisDelegate:self.tableViewDelegate];
+    __weak ViewController *weakSelf = self;
+    self.tableViewExtend = [[MVVMTableViewExtend alloc] init];
+    [self.tableView registerTableViewExtend:self.tableViewExtend];
+    [self.tableViewExtend startWithBlock:^{
+        [weakSelf.tableView reloadData];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

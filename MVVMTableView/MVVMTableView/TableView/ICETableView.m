@@ -10,16 +10,26 @@
 
 @implementation ICETableView
 
-
-/**
- *  <#Description#>
- *
- *  @param delegate <#delegate description#>
- */
--(void)regisDelegate:(id)delegate
+-(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
 {
-    self.dataSource = delegate;
-    self.delegate   = delegate;
+    self = [super initWithFrame:frame style:style];
+    if (self) {
+//        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return self;
+}
+
+-(void)registerTableViewExtend:(id)tableViewExtend
+{
+    self.dataSource = tableViewExtend;
+    self.delegate = tableViewExtend;
+}
+
+-(void)registerTableViewCellForIdentifier:(NSArray *)cellArray
+{
+    for (Class cellIdentifier in cellArray) {
+        [self registerClass:cellIdentifier forCellReuseIdentifier:NSStringFromClass(cellIdentifier)];
+    }
 }
 
 /*

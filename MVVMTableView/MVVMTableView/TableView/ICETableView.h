@@ -10,6 +10,8 @@
 
 @interface ICETableView : UITableView
 
-- (void) regisDelegate:(id)delegate;
+- (void)registerTableViewExtend:(id)tableViewExtend;
+
+- (void)registerTableViewCellForIdentifier:(NSArray *)cellArray;
 
 @end

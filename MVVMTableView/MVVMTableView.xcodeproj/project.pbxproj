@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		174F127F1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 174F127E1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.m */; };
 		174F12821B7B87D60099AC19 /* MVVMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174F12811B7B87D60099AC19 /* MVVMTableView.m */; };
-		174F12851B7B889F0099AC19 /* MVVMTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 174F12841B7B889F0099AC19 /* MVVMTableViewDataSource.m */; };
 		175C7E151B7B834F00C4DA25 /* ICETableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 175C7E141B7B834F00C4DA25 /* ICETableView.m */; };
+		17600EDE1B80678A0063B7D4 /* MVVMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17600EDD1B80678A0063B7D4 /* MVVMTableViewCell.m */; };
+		17600EE11B80683E0063B7D4 /* ICETableViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 17600EE01B80683E0063B7D4 /* ICETableViewExtend.m */; };
+		17600EE41B806A710063B7D4 /* MVVMTableViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 17600EE31B806A710063B7D4 /* MVVMTableViewExtend.m */; };
+		17600EE71B806B9B0063B7D4 /* ICEModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17600EE61B806B9B0063B7D4 /* ICEModelManager.m */; };
+		17600EEA1B80763E0063B7D4 /* ICETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17600EE91B80763E0063B7D4 /* ICETableViewCell.m */; };
 		17898CE21B7B7FE600B1213D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17898CE11B7B7FE600B1213D /* main.m */; };
 		17898CE51B7B7FE600B1213D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17898CE41B7B7FE600B1213D /* AppDelegate.m */; };
 		17898CE81B7B7FE600B1213D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17898CE71B7B7FE600B1213D /* ViewController.m */; };
@@ -32,14 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		174F127D1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETableViewExtendDataSourceDelegate.h; sourceTree = "<group>"; };
-		174F127E1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICETableViewExtendDataSourceDelegate.m; sourceTree = "<group>"; };
 		174F12801B7B87D60099AC19 /* MVVMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTableView.h; sourceTree = "<group>"; };
 		174F12811B7B87D60099AC19 /* MVVMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTableView.m; sourceTree = "<group>"; };
-		174F12831B7B889F0099AC19 /* MVVMTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTableViewDataSource.h; sourceTree = "<group>"; };
-		174F12841B7B889F0099AC19 /* MVVMTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewDataSource.m; sourceTree = "<group>"; };
 		175C7E131B7B834F00C4DA25 /* ICETableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETableView.h; sourceTree = "<group>"; };
 		175C7E141B7B834F00C4DA25 /* ICETableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICETableView.m; sourceTree = "<group>"; };
+		17600EDC1B80678A0063B7D4 /* MVVMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTableViewCell.h; sourceTree = "<group>"; };
+		17600EDD1B80678A0063B7D4 /* MVVMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewCell.m; sourceTree = "<group>"; };
+		17600EDF1B80683E0063B7D4 /* ICETableViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETableViewExtend.h; sourceTree = "<group>"; };
+		17600EE01B80683E0063B7D4 /* ICETableViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICETableViewExtend.m; sourceTree = "<group>"; };
+		17600EE21B806A710063B7D4 /* MVVMTableViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTableViewExtend.h; sourceTree = "<group>"; };
+		17600EE31B806A710063B7D4 /* MVVMTableViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewExtend.m; sourceTree = "<group>"; };
+		17600EE51B806B9B0063B7D4 /* ICEModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICEModelManager.h; sourceTree = "<group>"; };
+		17600EE61B806B9B0063B7D4 /* ICEModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICEModelManager.m; sourceTree = "<group>"; };
+		17600EE81B80763E0063B7D4 /* ICETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETableViewCell.h; sourceTree = "<group>"; };
+		17600EE91B80763E0063B7D4 /* ICETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICETableViewCell.m; sourceTree = "<group>"; };
 		17898CDC1B7B7FE600B1213D /* MVVMTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17898CE01B7B7FE600B1213D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17898CE11B7B7FE600B1213D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,8 +91,12 @@
 			children = (
 				175C7E131B7B834F00C4DA25 /* ICETableView.h */,
 				175C7E141B7B834F00C4DA25 /* ICETableView.m */,
-				174F127D1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.h */,
-				174F127E1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.m */,
+				17600EDF1B80683E0063B7D4 /* ICETableViewExtend.h */,
+				17600EE01B80683E0063B7D4 /* ICETableViewExtend.m */,
+				17600EE51B806B9B0063B7D4 /* ICEModelManager.h */,
+				17600EE61B806B9B0063B7D4 /* ICEModelManager.m */,
+				17600EE81B80763E0063B7D4 /* ICETableViewCell.h */,
+				17600EE91B80763E0063B7D4 /* ICETableViewCell.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -122,8 +135,10 @@
 				17898CDF1B7B7FE600B1213D /* Supporting Files */,
 				174F12801B7B87D60099AC19 /* MVVMTableView.h */,
 				174F12811B7B87D60099AC19 /* MVVMTableView.m */,
-				174F12831B7B889F0099AC19 /* MVVMTableViewDataSource.h */,
-				174F12841B7B889F0099AC19 /* MVVMTableViewDataSource.m */,
+				17600EDC1B80678A0063B7D4 /* MVVMTableViewCell.h */,
+				17600EDD1B80678A0063B7D4 /* MVVMTableViewCell.m */,
+				17600EE21B806A710063B7D4 /* MVVMTableViewExtend.h */,
+				17600EE31B806A710063B7D4 /* MVVMTableViewExtend.m */,
 			);
 			path = MVVMTableView;
 			sourceTree = "<group>";
@@ -307,12 +322,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				17898CE81B7B7FE600B1213D /* ViewController.m in Sources */,
+				17600EE41B806A710063B7D4 /* MVVMTableViewExtend.m in Sources */,
 				174F12821B7B87D60099AC19 /* MVVMTableView.m in Sources */,
-				174F12851B7B889F0099AC19 /* MVVMTableViewDataSource.m in Sources */,
+				17600EE11B80683E0063B7D4 /* ICETableViewExtend.m in Sources */,
 				175C7E151B7B834F00C4DA25 /* ICETableView.m in Sources */,
-				174F127F1B7B85EF0099AC19 /* ICETableViewExtendDataSourceDelegate.m in Sources */,
 				17898CE51B7B7FE600B1213D /* AppDelegate.m in Sources */,
 				17898CE21B7B7FE600B1213D /* main.m in Sources */,
+				17600EE71B806B9B0063B7D4 /* ICEModelManager.m in Sources */,
+				17600EDE1B80678A0063B7D4 /* MVVMTableViewCell.m in Sources */,
+				17600EEA1B80763E0063B7D4 /* ICETableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
